@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fire Attack Procedures: Eligibility to Effects — Checklist</title>
+  <style>
+    :root{
+      --bg:#dff5d8; /* light green */
+      --text:#7b4a12; /* brown */
+      --card:#eef9e9;
+    }
+    html,body{height:100%;}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.55;
+      margin:0;
+    }
+    .wrap{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    h1{margin:0 0 10px; font-size: 1.8rem;}
+    p.lead{margin:0 0 18px;}
+    .section{background:var(--card); border-radius:14px; padding:16px 16px 6px; box-shadow: 0 4px 10px rgba(0,0,0,.06); margin: 14px 0;}
+    .section h2{margin:0 0 8px; font-size:1.2rem;}
+
+    /* Checklist styles */
+    .checklist{list-style:none; padding:0; margin: 0 0 10px;}
+    .checklist li{display:flex; gap:.6rem; align-items:flex-start; margin:6px 0;}
+    .checklist input[type="checkbox"]{margin-top: .2rem; transform: translateY(2px);}  
+    .sub{margin-left: 1.8rem;}
+    .ref{opacity:.9; font-weight:600;}
+    .small{font-size: .95rem;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Fire Attack Procedures: Eligibility to Effects — Checklist</h1>
+    <p class="lead">A standard fire attack involves several steps, from determining eligibility to resolving the effects of fire <span class="ref"></span>.</p>
+
+    <div class="section">
+      <h2>1) Check Eligibility and Line of Sight (LOS)</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s1-0"><label for="s1-0">All units capable of making a Fire Attack must have a target within their Line of Sight (LOS) and Range <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s1-1"><label for="s1-1">Artillery units must be unlimbered to perform a Fire Attack <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s1-2"><label for="s1-2">Combat units can only voluntarily fire through their front hexsides into target hexes within their range <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s1-3"><label for="s1-3">A unit always has LOS to an adjacent hex <span class="ref"></span>. For non-adjacent targets, a LOS is traced from the center of the firing hex to the center of the target hex <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s1-4"><label for="s1-4">LOS can be blocked by certain terrain features or by other combat units (unless those units are Prone, in Square, or Skirmish Order) <span class="ref"></span>. Units cannot fire through other friendly or enemy combat units <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s1-5"><label for="s1-5">Units must fire on an adjacent unit if possible, even if a more “opportune” target exists further away <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2) Determine Fire Value of Attacking Units</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s2-0"><label for="s2-0">The Fire Value of an infantry unit is based on its nationality, troop type, tactical formation, and sometimes the number of men firing <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-1"><label for="s2-1">Consult the Fire Effects Chart to find the Fire Multiple or determine if the unit uses its “printed” value <span class="ref"></span>.</label></li>
+      </ul>
+      <ul class="checklist sub small">
+        <li><input type="checkbox" id="s2-a"><label for="s2-a">Infantry in Column, General Order, or Disorder: Use the Printed Fire Value on the specific side of the counter <span class="ref"></span>. If such a unit is reduced to a single increment, its Fire Value is halved <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-b"><label for="s2-b">Infantry in Line: Up to 4 increments may fire from a single hex. The Fire Value is the number of increments firing multiplied by the unit’s Fire Multiple from the Fire Effects Chart <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-c"><label for="s2-c">Infantry Skirmishers: Up to 3 increments may fire from a single hex. The Fire Value is the number of increments firing multiplied by the unit’s Fire Multiple <span class="ref</span>.</label></li>
+        <li><input type="checkbox" id="s2-d"><label for="s2-d">Infantry in Square: Up to 9 increments of infantry, in addition to any artillery, may fire. The value for each of up to three Fire Attacks is ((Up to 9 Increments × Fire Multiple + Artillery Printed Fire Value) ÷ 3) <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-e"><label for="s2-e">Cavalry may not make Fire Attacks <span class="ref"></span>.</label></li>
+      </ul>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s2-2"><label for="s2-2">Apply Fire Value Modifiers <span class="ref"></span>:</label></li>
+      </ul>
+      <ul class="checklist sub small">
+        <li><input type="checkbox" id="s2-m1"><label for="s2-m1">If the target is adjacent to firing artillery: +2 shifts on the Fire Chart <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-m2"><label for="s2-m2">For Offensive/Defensive Fire (when Roll to Close or Roll to Stand is passed): Fire Value × 2 <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-m3"><label for="s2-m3">For units in Column, General Order, or Disorder with only 1 increment remaining: Fire Value × ½ <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-m4"><label for="s2-m4">For Opportunity Fire: Fire Value × ½ <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-m5"><label for="s2-m5">For Skirmish Fire at Two Hexes: Fire Value × ½ (unless the unit is armed with rifles) <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-m6"><label for="s2-m6">For Artillery with increments lost: Reduce Fire Value proportionally to losses <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s2-3"><label for="s2-3">The Fire Values of all units firing at the target hex are combined into a single total Fire Value <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3) Determine Fire Defense of Target Hex</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s3-0"><label for="s3-0">The Fire Defense of a hex is determined by the target type (infantry, cavalry, artillery), its formation, and the terrain of the target hex <span class="ref"></span>. Refer to the Fire Defense Chart <span class="ref"></span>.</label></li>
+      </ul>
+      <ul class="checklist sub small">
+        <li><input type="checkbox" id="s3-m1"><label for="s3-m1">Enfilade Fire: If a unit in Line is fired upon through its flank hexside, its Fire Defense is treated as that of a unit in Column <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s3-m2"><label for="s3-m2">Hex with more than 6 Increments in Line: Its Fire Defense is treated as that of a unit in Column <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s3-m3"><label for="s3-m3">Square with more than 9 Increments: Its Fire Defense is 4 <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s3-m4"><label for="s3-m4">Prone units: Receive a +2 modifier to their Fire Defense value in most terrain types <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s3-m5"><label for="s3-m5">Artillery Stacked with Infantry: Use the specific “w/infantry” row on the Fire Defense Chart <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4) Calculate Odds</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s4-0"><label for="s4-0">Divide the Total Fire Value by the Fire Defense of the target hex to produce the odds <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s4-1"><label for="s4-1">Round down any resulting fractions to the nearest lower odds column on the Fire Chart <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s4-2"><label for="s4-2">Fire Attacks at odds less than 1:3 are not permitted <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s4-3"><label for="s4-3">Fire Attacks at odds greater than 10:1 are treated as 10:1 <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5) Roll Dice and Apply Modifiers</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s5-0"><label for="s5-0">Roll two six-sided dice of different colors (one designated as the first digit, one as the second), producing a result from 11 to 66 <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s5-1"><label for="s5-1">Apply Fire Chart Dice Roll Modifiers <span class="ref"></span>:</label></li>
+      </ul>
+      <ul class="checklist sub small">
+        <li><input type="checkbox" id="s5-m1"><label for="s5-m1">Any Leader Artillery Bonus <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s5-m2"><label for="s5-m2">For massed targets (>9 increments): +3 for 10–12 increments, +6 for 13–15 increments, +12 for 16–18 increments, or +18 for >18 increments in the target hex <span class="ref"></span>.</label></li>
+      </ul>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s5-2"><label for="s5-2">Locate the modified die roll result on the Fire Chart (Combat à Feu) under the calculated odds column <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6) Determine Losses and Effects</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="s6-0"><label for="s6-0">The result from the Fire Chart indicates the number of increments lost by the target unit(s) <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-1"><label for="s6-1">Losses are always taken from the top combat unit in a stack <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-2"><label for="s6-2">If artillery is stacked with infantry, artillery takes the even-numbered losses, and infantry takes the odd-numbered losses <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-3"><label for="s6-3">A natural die roll of 65–66 on the Fire Chart results in a leader casualty if a leader is present in the target hex <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-4"><label for="s6-4">Any unit suffering a casualty from Fire Combat (excluding Offensive/Defensive Fire in an Assault) must make a Morale Check <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-5"><label for="s6-5">If the top unit in a stack is eliminated, remaining units in the stack still make a Morale Check <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-6"><label for="s6-6">If losses cause a unit’s increments to fall below the minimum requirement for its current formation, it immediately Disorders <span class="ref"></span>.</label></li>
+        <li><input type="checkbox" id="s6-7"><label for="s6-7">Fire Attacks are considered simultaneous, meaning that losses incurred during the Fire Segment do not affect a unit’s ability to return fire at its initial strength for that same segment <span class="ref"></span>.</label></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
